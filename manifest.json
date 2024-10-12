@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Tag Content Monitor",
+  "version": "1.0",
+  "description": "Moniteur de contenu des balises span",
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://fr.tradingview.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
